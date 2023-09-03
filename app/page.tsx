@@ -18,8 +18,10 @@ const getCharacters = async () => {
 export default async function Home() {
   const characters = await getCharacters();
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="font-bold text-2xl mb-4">Rick and Morty Characters</h1>
+    <div className="container mx-auto px-4 py-8 font-mono">
+      <h1 className="flex items-center justify-center text-7xl">
+        Rick and Morty
+      </h1>
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {characters.map((character) => (
           <li
